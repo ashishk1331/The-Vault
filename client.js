@@ -135,7 +135,7 @@ function appendToList(name,link){
             <p>${date}</p>
         </div>
         <a href="${link}">${link}</a>
-        <a href="#" id="delete-link"><img src="/The Vault/images/trash.png" id="bin"></a>
+        <a href="#" id="delete-link"><img src="/images/trash.png" id="bin"></a>
     </li>
     `);
     $('#link-list > ul').prepend(newLi);
@@ -152,7 +152,7 @@ function appendToList(name,link,date){
             <p>${date}</p>
         </div>
         <a href="${link}">${link}</a>
-        <a href="#" id="delete-link"><img src="/The Vault/images/trash.png" id="bin"></a>
+        <a href="#" id="delete-link"><img src="/images/trash.png" id="bin"></a>
     </li>
     `);
     $('#link-list > ul').append(newLi);
@@ -245,6 +245,6 @@ function updateNumberOfLinks(){
                 <p>Sept'20</p>
             </div>
             <a href="#">https//www.google.com/</a>
-            <a href="#" id="delete-link"><img src="/The Vault/images/trash.png" id="bin"></a>
+            <a href="#" id="delete-link"><img src="/images/trash.png" id="bin"></a>
         </li>
 */
