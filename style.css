@@ -1,0 +1,335 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin: 0 0;
+    font-family: monospace;
+}
+header{
+    margin: 0 0;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    height: 3em;
+    line-height: 1.6em;
+    font-size: 1.6em;
+    padding: 0 2em;
+}
+header > a{
+    padding-top: 1em;
+} 
+header > h1{
+    padding-top: 0.5em;
+    margin: 0 0;
+}
+
+#banner{
+    display: flex;
+    flex-direction: row;
+    justify-content: safe; 
+    width: 100%;
+    height: 80%;
+    padding: 3em 0em;
+    border-bottom: 3px solid rgba(0, 0,0,0.2);
+}
+#vault-image{
+    width: 100%;
+    height: 100%;
+}
+#vault-image > img{
+    width: 40%;
+    height: auto;
+    padding: 8em 15em;
+}
+#banner > figure{
+    width: 50%;
+    height: 100%;
+    font-size: 4em;
+    transform: translateX(-1.5em);
+    padding-top: 2em;
+}
+code{
+    background-color: yellow;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+#the-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: safe;
+    width: auto;
+    height: 100%;
+    margin-bottom: 2em;
+    padding: 0em 5em;
+}
+#the-form > div{
+    width: 50%;
+    height: 100%;
+    font-size: 4em;
+    padding: 0.5em 1em;
+    border-right: 15px solid rgba(0, 0, 0,0.2);
+    padding-bottom: 0em;
+    background-color: transparent;
+}
+#the-form > form{
+    width: 50%;
+    height: 80%;
+    background-color: white;
+    font-size: 1.2em;
+    padding-left: 6em;
+    padding-right: 0em;
+    padding-top: 2em;
+    padding-bottom: 0em;
+}
+label > p{
+    font-size: 1.6em;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+}
+label > input{
+    outline: none;
+    border: 1px solid gray;
+    padding: 10px 10px;
+    font: 2em;
+    border: none;
+    width: 100%;
+    margin-left: -5px;
+    border-left: 5px solid gray;
+}
+label > input:focus{
+    border-left: 5px solid rgb(36, 230, 36);
+}
+
+form > button{
+    padding: 10px 10px;
+    background-color: rgba(255, 255,255,0.2);
+    color: black;
+    border: 1px solid black;
+    box-shadow: none;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+}
+form > button{
+    transform: scale(0.95);
+}
+#error{
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    height: 10%;
+    background-color: rgb(219, 34, 34);
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+#quote-block{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    border-top: 5px solid rgba(0, 0,0,0.2);
+}
+#quote-block-header > p{
+    width: 100%;
+    height: auto;
+    font-size: 2em;
+    text-decoration: underline;
+}
+#quote-block-header > button{
+    padding: 10px 10px;
+    background-color: rgba(255, 255,255,0.2);
+    color: black;
+    box-shadow: none;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+    border: none;
+}
+button > img{
+    width: 40px;
+    height: auto;
+}
+#quote-block-header > button:active{
+    transform: scale(0.95);
+}
+#quote-block > h1{
+    width: 100%;
+    height: auto;
+    font-size: 4em;
+}
+
+
+#account{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0,0.2);
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+#account > p{
+    font-size: 1.2em;
+    font-weight: 700;
+}
+#add-link-button{
+    position: fixed;
+    top: 95%;
+    left: 95%;
+    transform: translate(-100%,-100%);
+    width: 5em;
+    height: 5em;
+    border-radius: 100%;
+    cursor: pointer;
+    background-color: yellow;
+    border: none;
+    outline: none;
+    appearance: none;
+    font-weight: 900;
+}
+button > abbr{
+    font-size: 2.2em;
+    text-decoration: none;
+}
+
+#add-link{
+    position: fixed;
+    top: 2%;
+    left: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 95%;
+    width: 95%;
+    background-color: white;
+    box-shadow: 5px 5px 16px rgba(0, 0, 0,0.4) , -4px -4px 16px rgba(0, 0, 0,0.2);
+    border-radius: 10px;
+}
+#add-link > #add-link-wall{
+    width: 50%;
+    height: 80%;
+    font-size: 5em;
+    font-weight: 900;
+    padding: 0;
+    padding-left: 1em;
+    padding-top: 2em;
+}
+#add-link > #add-link-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 50%;
+    padding-left: 50px;
+}
+.add-link-form{
+    cursor: pointer;
+}
+.add-link-form > input{
+    outline: none;
+    border: 1px solid gray;
+    padding: 10px 10px;
+    font: 2em;
+    border: none;
+    width: 80%;
+    height: 12%;
+    margin-left: -5px;
+    border-left: 5px solid gray;
+    font-size: 1.4em;
+}
+.add-link-form > input:focus{
+    border-left: 5px solid rgb(36, 230, 36);
+}
+#add-link-form > button{
+    width: 90%;
+    height: 2em;
+    font-size: 2em;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-weight: 200;
+}
+#add-link-form > button:active{
+    transform: scale(0.9);
+}
+#add-link > a{
+    font-size: 3em;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 20px;
+    margin-left: 50px;
+}
+
+ul{
+    padding: 0%;
+    padding-top: 2em;
+    list-style-type: none;
+    height: auto;
+}
+li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(0, 0,0,0.2);
+    margin-bottom: 2em;
+}
+.items-in-link-list > h3{
+    font-size: 1.6em;
+}
+.items-in-link-list > p{
+    font-size: 1em;
+    transform: translateY(-1.4em);
+    font-weight: 900;
+}
+li > a{
+    margin-block-start: 1.5em;
+    font-size: 1.4em;
+}
+#delete-link > img{
+    width: 25px;
+    height: auto;
+}
+li > p{
+    font-size: 2em;
+    margin-block-start: 1em;
+}
+#no-link-banner{
+    padding-top: 2em;
+    background-color: transparent;
+    color: rgba(0, 0, 0,0.5);
+    font-size: 4em;
+    font-style: italic;
+    font-weight: 500;
+    text-align: center;
+}
+#delete-link{
+    color: magenta;
+    text-decoration: none;
+}
+
+footer{
+    padding: 6em 0em;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: 400;
+    border-top: 2px solid rgba(0, 0,0,0.4);
+}
+.about{
+    color: magenta;
+}
