@@ -13,6 +13,11 @@ $('#already-signed-up').on('click',(e) => {
     $('#sign-in-form').fadeIn(200);
 });
 
+function showSignInForm(){
+    $('#sign-up-form').hide();
+    $('#sign-in-form').fadeIn(200);
+}
+
 $('#sign-in-form').on('submit', (e) => {
     e.preventDefault();
     const form = document.querySelector("#sign-in-form");
@@ -100,6 +105,7 @@ function active_user(state) {
         $('footer').hide();
     }
     else{
+        showSignInForm();
         $('#banner').show();
         $('#the-form').show();
         $('#quote-block').show();
